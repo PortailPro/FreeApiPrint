@@ -4,7 +4,7 @@ Installation
 * install the SQL base to execute install.sql file
 * download the [wkhtmltopdf binary](http://code.google.com/p/wkhtmltopdf/) in the exec folder
 * copy inc/config.inc.php-dist file to inc/config.inc.php
-* modify the inc/config.inc.php to set your parameters (PDO database, Print binary, ...)
+* edit the inc/config.inc.php to set your parameters (PDO database, Print binary path, ...)
   
 Using server side
 =================
@@ -48,7 +48,7 @@ The project can't exists without [wkhtmltopdf](http://code.google.com/p/wkhtmlto
 License
 =======
 
-FreeApiPrint is release under [BSD license](http://www.opensource.org/licenses/bsd-license.php "A fucking awesome license :-)")
+FreeApiPrint is release under [BSD license](http://www.opensource.org/licenses/bsd-license.php "A fucking awesome license")
 
 Authors
 =======
