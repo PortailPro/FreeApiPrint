@@ -22,25 +22,27 @@ Using client side
 
 Example to call the PDF print :
 
-        // Setup the API call
-        $print = new ApiPrintPdf();
-        $print->setService('[URL of the API]');
-        $print->setEmail('[email of the API account]');
-        $print->setApiKey('[API key of the API account]');
-        $print->setUrl('[URL to print]'); // or $print->setContent('[HTML content to print]');
-        
-        // You can define some options (see inc/ApiPrintOption.class.php to known availables options)
-        $print->setOptions(array('grayscale' => true, 'margin-top' => '5mm'));
-        
-        // call the API
-        $res = $print->callApi();
-        if ($res === true) {
-          // for save the file
-          $print->save('/path/my-awesome-pdf.pdf');
-          // for the download by client
-          $print->download('my awesome PDF.pdf');
-        }
-        
+``` php
+// Setup the API call
+$print = new ApiPrintPdf();
+$print->setService('[URL of the API]');
+$print->setEmail('[email of the API account]');
+$print->setApiKey('[API key of the API account]');
+$print->setUrl('[URL to print]'); // or $print->setContent('[HTML content to print]');
+
+// You can define some options (see inc/ApiPrintOption.class.php to known availables options)
+$print->setOptions(array('grayscale' => true, 'margin-top' => '5mm'));
+
+// call the API
+$res = $print->callApi();
+if ($res === true) {
+  // for save the file
+  $print->save('/path/my-awesome-pdf.pdf');
+  // for the download by client
+  $print->download('my awesome PDF.pdf');
+}
+``` 
+
 Credit
 ======
 The project can't exists without [wkhtmltopdf](http://code.google.com/p/wkhtmltopdf/). Thanks to them
