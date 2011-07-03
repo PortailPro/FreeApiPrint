@@ -119,7 +119,7 @@ class ApiPrintPdf
    * @access  public
    * @since   1.0.0
    */
-  function __contruct($service = null, $email = null, $api_key = null, $url = null, $content = null)
+  function ApiPrintPdf($service = null, $email = null, $api_key = null, $url = null, $content = null)
   {
     if ($email !== null) {
       $this->setEmail($email);
