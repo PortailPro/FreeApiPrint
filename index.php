@@ -54,6 +54,9 @@ try {
     $url = (string)$_POST['url'];
     $md5 = md5($url);
   } elseif (isset($_POST['content']) === true && is_string($_POST['content']) === true && empty($_POST['content']) === false) {
+    if (get_magic_quotes_gpc() === 1) {
+      $_POST['content'] = stripslashes($_POST['content']);
+    }
     $content = (string)$_POST['content'];
     $md5 = md5($content);
   }
