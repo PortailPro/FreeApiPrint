@@ -187,6 +187,24 @@ class ApiPrintOption
       '--enable-local-file-access',
       '--disable-local-file-access',
     ),
+    
+    // Define a HTML header
+    'header-html'                 => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
+    
+    // Define a HTML footer
+    'footer-html'                 => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
   );
   
   
