@@ -197,8 +197,80 @@ class ApiPrintOption
       null,
     ),
     
+    // Display line below the header
+    'header-line'                 => array(
+      false,
+      'is_numeric',
+      null,
+      '--header-line',
+      '',
+    ),
+    
+    // Define the left header
+    'header-left'                 => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
+    
+    // Define the center header
+    'header-center'               => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
+    
+    // Define the right header
+    'header-right'                => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
+    
     // Define a HTML footer
     'footer-html'                 => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
+    
+    // Display line above the footer
+    'footer-line'                 => array(
+      false,
+      'is_numeric',
+      null,
+      '--footer-line',
+      '',
+    ),
+    
+    // Define the left footer
+    'footer-left'                 => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
+    
+    // Define the center footer
+    'footer-center'               => array(
+      '',
+      'is_string',
+      null,
+      null,
+      null,
+    ),
+    
+    // Define the right footer
+    'footer-right'                => array(
       '',
       'is_string',
       null,
